@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding-top: 80px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    padding-top: 60px;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+svg, img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer!important;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  background-repeat: no-repeat!important;
+  background-size: contain!important;
+  background-position: center!important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.absolute-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.btn-plain {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+//buttons
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 12px 66px;
+  font-size: 16px;
+  line-height: 124.74%;
+  font-weight: 700;
+  font-family: "Platform";
+  border-radius: 4px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    padding: 12px 30px;
+  }
+}
+
+.btn-main {
+  background: #FFCE32;
+  color: #002F34;
+}
